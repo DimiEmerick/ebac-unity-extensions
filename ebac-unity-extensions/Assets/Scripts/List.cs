@@ -8,6 +8,8 @@ public class List : MonoBehaviour
 
     private void Start()
     {
-        objects.GetRandom();
+        var randomObj = objects.GetRandom();
+        randomObj.transform.position += Vector3.up * 3;
+        Debug.Log(randomObj.name);
     }
 }
